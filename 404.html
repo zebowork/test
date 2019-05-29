@@ -11,24 +11,11 @@ permalink: /404.html
     <script type="text/javascript" src="/index.js"></script>
 </head>
       
-<body onload="run()">
+<body onload="redirectTo(3000)">
 
 <noscript>
       You need to enable JavaScript to Redirect.
 </noscript>
-
-<script>
-function run() {
-  path = window.location.pathname;
-      console.log(path);
-  index = window.location.href.indexOf("?");
-  params = index > -1 ? window.location.href.substring(index) : "";
-console.log(params);
-      newLocation = "http://localhost:8080"+path+params;
-      console.log(newLocation);
-  window.location.replace(newLocation);
-}
-</script>
 
 </body>
 </html>
